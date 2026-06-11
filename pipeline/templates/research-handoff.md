@@ -14,7 +14,9 @@ Enough for the agent to disambiguate them from similarly named people.>
 
 ## What we already know (from the broad scan)
 <The scan's one-line namings relevant to this topic: framework names, recurring
-phrases, where this topic shows up in their content. This is the agent's trailhead.>
+phrases, where this topic shows up in their content. Include the scan's coverage
+notes — items marked thin come with: "coverage looks shallow — confirm or report
+as gap." This is the agent's trailhead.>
 
 ## Scope boundary
 - **In scope:** <the precise territory of this brief>
@@ -26,20 +28,29 @@ phrases, where this topic shows up in their content. This is the agent's trailhe
 2. WHY do they prescribe it that way — what reasoning or experience do they cite?
 3. What mistakes do they warn about, and what stories do they tell about them?
 4. How does their advice differ for a beginner vs someone established?
-5. Has their position on this changed over time? When, and to what?
 
 ## Source guidance
 <Known channels and specific videos/episodes/articles likely to cover this topic,
 from the scan. The agent should go beyond these but start here.>
 
 ## Rules (non-negotiable)
-1. **Mentor-specific only.** Report what THIS person says/does/teaches. Generic domain
-   advice is forbidden — if a sentence would be true of any expert in the field and you
-   can't cite the mentor saying it, cut it.
-2. **Cite everything.** URL, video title + timestamp where possible, podcast episode,
-   book + chapter. Core claims: prefer direct quotes.
-3. **Mark confidence** on each claim: `[verbatim]`, `[paraphrased]`, or
-   `[reconstructed]` (assembled from multiple sources).
+
+1. **Mentor-specific only, graded by this evidence ladder.** Mark every claim:
+   - `[stated-verbatim]` / `[stated-paraphrased]` — the mentor explicitly says it as
+     advice or position.
+   - `[demonstrated]` — the mentor shows it through examples, stories, or visible
+     actions without naming it as advice. Admissible; cite the demonstration itself.
+     Never report a demonstrated claim as stated.
+   - `[reconstructed]` — a pattern you infer across their material, never stated or
+     singly demonstrated. Requires ≥2 independent instances, all cited.
+   - **Generic domain knowledge is forbidden.** Test: if the sentence would survive
+     with the mentor's name swapped for any expert's and no citation breaks, cut it.
+2. **Cite and date everything.** URL, video title + timestamp where possible, podcast
+   episode, book + chapter — and publication date wherever recoverable.
+3. **Currency check.** Mentors change their minds. Before reporting any major claim,
+   search for later revisions or retractions ("I was wrong about", "I no longer
+   recommend", newer content on the same topic). Report the mentor's *current*
+   position as the finding; report superseded positions under Evolution & corrections.
 4. **Report gaps as gaps.** "I could not find the mentor's position on X" is a valid
    and valuable finding. Never fill a gap with plausible invention.
 
@@ -55,7 +66,11 @@ Researched: <date>
 
 ## Findings
 ### <Sub-topic>
-<claims, each cited and confidence-marked>
+<claims, each cited, dated, and marker-graded>
+
+## Evolution & corrections   ← mandatory section
+<positions the mentor has revised or retracted in this territory, with before/after
+and dates — or "searched for revisions; none found">
 
 ## Quotes worth keeping
 <the most teaching-dense direct quotes, cited>
@@ -64,5 +79,5 @@ Researched: <date>
 <questions from the brief that could not be answered, and what was tried>
 
 ## Sources consulted
-<full list, including dead ends>
+<full list with dates, including dead ends>
 ```

@@ -57,6 +57,16 @@ You name a mentor
    The `/mentor` skill is just a thin adapter for Claude Code — any agent harness that can
    read and write files can run a session.
 
+## Who this works for (prerequisite)
+
+The workflow builds mentors from **publicly documented teaching**. Pick guiding voices
+who show up online with substantial material — videos, courses, podcasts, books, talks.
+A private coach, or someone known mainly by reputation with little documented teaching,
+won't yield a usable brain; the pipeline's first stage checks for this and tells you
+early. The hardest material — how they actually mentor 1-on-1 — needs *recorded
+interactions* (coaching calls, live reviews, office hours); the pipeline treats this as
+its strictest evidence requirement and will warn you when it can't find any.
+
 ## Repo layout
 
 | Path | What it is |

@@ -4,9 +4,14 @@
 > it shapes HOW the session runs, independent of what knowledge gets used.
 > Reminder: this is about adopting their *methods* of teaching, never their persona.
 
+**Evidence level of this profile:** <T1-grounded / T2-T3 only — see below>
+<If T2/T3 only: state it plainly. Sessions must present this material as the mentor's
+self-described approach, never as observed behavior. Every claim below carries its
+tier (T1 observed / T2 self-described / T3 inferred).>
+
 ## How they open with someone new
-<What they ask first, what they assess, what they're listening for. Observed from
-coaching calls, Q&As, "roast my X" content, advice-to-beginners material.>
+<What they ask first, what they assess, what they're listening for. Built from
+observed instances (coaching calls, live reviews, Q&As) — cite instances, mark tiers.>
 
 ## Questioning style
 <Do they diagnose with questions or prescribe directly? What questions do they return
@@ -26,6 +31,10 @@ until Y"). Their view of the learning path through their domain.>
 ## Homework patterns
 <What they tell people to go do between conversations, and how they check it.>
 
+## Where self-description and observation diverge
+<T2 claims contradicted or corroborated by T1 evidence — sessions should follow the
+observed behavior, not the self-description, and may note the divergence.>
+
 ## Sources
-<refs — note: this material is often the thinnest; mark which parts are observed
-directly vs reconstructed, so sessions can label accordingly.>
+<refs with tiers and dates. This material is often the thinnest in the brain —
+the tier markers are what let sessions label it honestly.>

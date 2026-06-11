@@ -47,6 +47,50 @@ example, not guessed up front.
 content (brain, session protocol, mentee profile, progress notes) is plain markdown
 so any agent harness can run the same workflow later.
 
+### D7. Evidence ladder: stated / demonstrated / reconstructed (2026-06-11)
+Resolves "taught vs implied." A mentor's teaching includes what they explicitly state,
+what they demonstrate through examples and stories without naming, and patterns
+reconstructible from ≥2 independent instances — each marked as such, with markers
+surviving into the brain and into session attribution. Generic domain knowledge stays
+out. Defined once in `pipeline/00-evidence-standards.md`; briefs inline it (briefs are
+self-contained). Rationale: without an explicit boundary, different scan agents draw
+it differently and mentors get inconsistent brains.
+
+### D8. Teaching style is source-hunted, not scanned (2026-06-11)
+Mentoring behavior is *behavioral* evidence — it can only be researched by observing
+instances, not by summarizing claims. Stage 1 therefore hunts for artifacts (recorded
+coaching calls, live reviews, office hours) instead of describing the style; this is a
+dedicated section of the scan format, not an emphasis. Evidence tiers: T1 observed
+interaction / T2 self-described / T3 inferred from content structure. **T1 is a hard
+gate:** if none found, the pipeline stops after Stage 1 and the user chooses — supply
+private sources (`research/user-sources/`), proceed with a labeled T2/T3-only profile,
+or skip. The Stage 2 style brief is observational (template:
+`research-handoff-observational.md`): it mines the listed artifacts, expands
+collections (a playlist → every session in it), and extracts behavior as
+situation → move → outcome instances before generalizing.
+
+### D9. Currency rule: latest position wins (2026-06-11)
+Breadth-first search finds popular positions, not current ones — Stage 1 can't fix
+that, so Stage 2 must: every brief requires dating claims and checking for later
+revisions/retractions before reporting; findings carry a mandatory "Evolution &
+corrections" section; synthesis arbitrates conflicts by latest dated position and
+records superseded ones as evolution in `sources.md`. The scan helps by inventorying
+"self-corrections & changed positions" as a category breadth search *can* find.
+
+### D10. Scan proposes, Stage 2 partitions; coverage is a three-state map (2026-06-11)
+Partition ownership was ambiguous. Now: the scan only *nominates* research candidates;
+Stage 2 owns the final partition under explicit criteria (one brief ≈ one mentee-facing
+decision domain, prefer the mentor's own framework boundaries, size limits), recorded
+in `research/handoffs/00-partition.md` for auditability. Every scan inventory item is
+tagged `[covered]`/`[thin]`/`[absent]`: thin items ride along on neighboring briefs,
+absent items get no brief and seed `gaps.md` directly — giving sessions an explicit
+before-the-fact map of when they're extrapolating.
+
+### D11. Mentor viability prerequisite (2026-06-11)
+The workflow only works for publicly documented teachers. Stated in the README; the
+scan's first step includes a viability verdict so an unsuitable mentor fails fast,
+before research is spent.
+
 ## Open questions
 
 - **O1. Mentor instruction format.** Is a markdown brain + session protocol enough, or
@@ -57,12 +101,19 @@ so any agent harness can run the same workflow later.
   questions + `progress.md`, but a real assessment rubric per domain may be needed.
 - **O3. Multi-mentor.** Can tracks consult multiple mentors? Do mentors ever disagree
   on record, and how is that surfaced? Deferred until ≥2 brains exist.
-- **O4. Source ingestion.** Right now research agents work from public web material.
-  Do we need an inbox for user-supplied material (transcripts, course notes, books)?
-  Likely yes — add when first needed.
+- **O4. Source ingestion.** Partially answered by D8: `mentors/<slug>/research/user-sources/`
+  exists for user-supplied teaching-style evidence. Still open: a general inbox for
+  user-supplied material on *topic* briefs (transcripts, course notes, books), and how
+  research agents should weigh private material against public material.
 - **O5. Session cadence + homework.** Real mentorship includes between-session work.
   How does the mentor assign, track, and review homework? Sketched in the session
   protocol; needs validation in the pilot.
 - **O6. Quality gate for research findings.** How do we verify a research agent didn't
-  hallucinate? Current answer: citation requirements + synthesis cross-checking.
-  May need a dedicated verification pass.
+  hallucinate? Current answer: citation + dating requirements, evidence-ladder markers,
+  the currency rule, and synthesis cross-checking. May still need a dedicated
+  verification pass (an agent that samples citations and confirms they say what the
+  findings claim).
+- **O7. Partition quality.** D10 gives Stage 2 explicit partitioning criteria, but
+  whether they produce good partitions is unproven. Revisit after the Jamie Brindle
+  build — compare the partition `00-partition.md` records against what synthesis
+  actually needed.

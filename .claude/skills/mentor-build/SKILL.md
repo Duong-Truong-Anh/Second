@@ -13,17 +13,32 @@ if the mentorship domain isn't obvious or given, ask for it before starting.
 2. If the mentor already exists, ask: refresh the scan, add research areas, or rebuild?
 
 ## Stage 1 — Broad scan
-Follow `pipeline/01-broad-scan.md` exactly. Use web search/fetch extensively — the scan
-lives or dies on breadth. Write `mentors/<slug>/scan.md` in the prescribed structure.
-**Stop and show the user the scan**, especially the "Research needs" section — they may
-know channels or material the scan missed. Incorporate their input before Stage 2.
+Follow `pipeline/01-broad-scan.md` exactly (standards: `pipeline/00-evidence-standards.md`).
+Use web search/fetch extensively — the scan lives or dies on breadth. Write
+`mentors/<slug>/scan.md` in the prescribed structure, including the viability
+assessment, coverage map, and the teaching-style **source hunt** (artifacts, not
+summaries).
+
+**Mandatory checkpoint — stop and report to the user:**
+- Viability verdict (thin public footprint → recommend stopping).
+- Teaching-style source verdict. **If no T1 artifacts (recorded real interactions)
+  were found, warn explicitly:** continuing means a self-described/inferred style
+  profile only. Offer: (a) user supplies private sources into
+  `mentors/<slug>/research/user-sources/`, (b) proceed degraded, (c) skip the style
+  brief. Do not proceed to Stage 2 without their answer.
+- Coverage map + research candidates — they may know channels or topics the scan missed.
 
 ## Stage 2 — Research handoffs
-Follow `pipeline/02-research-handoffs.md`. For each research area:
-1. Write the brief to `mentors/<slug>/research/handoffs/NN-<topic>.md` using
-   `pipeline/templates/research-handoff.md`. Honor all five partitioning rules —
-   each brief fully self-contained, scope boundaries explicit.
-2. Always include the dedicated **teaching & mentoring style** brief.
+Follow `pipeline/02-research-handoffs.md`:
+1. **Partition first** (Stage 2 owns it; the scan only proposed). Apply the criteria,
+   record the mapping in `research/handoffs/00-partition.md`.
+2. Write topic briefs to `mentors/<slug>/research/handoffs/NN-<topic>.md` using
+   `pipeline/templates/research-handoff.md` — self-contained, scope-bounded, currency
+   rule and evidence ladder inlined.
+3. Write the **teaching-style brief** using
+   `pipeline/templates/research-handoff-observational.md`, pasting in the scan's
+   source-hunt table plus any user-supplied sources (mandatory unless the user skipped
+   it at the checkpoint).
 
 Then ask the user how to run them:
 - **Subagents (default):** spawn one research agent per brief, prompt = the brief file

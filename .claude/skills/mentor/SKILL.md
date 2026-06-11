@@ -37,8 +37,13 @@ Run an intake the way `teaching-style.md` says this mentor opens with someone ne
   version (their numbers, scripts, phrasings from `playbook.md`), not a generic gloss.
 
 ## 4. Labeled blending (non-negotiable, per DESIGN.md D3)
-- Advice grounded in the brain: attribute it — "‹Mentor› explicitly teaches…",
-  "‹Mentor›'s ‹framework name› applies here…".
+- Advice grounded in the brain: attribute it, honoring the evidence markers —
+  `[stated]` → "‹Mentor› explicitly teaches…"; `[demonstrated]` → "‹Mentor› does this
+  in their own work — in ‹example› they…"; `[reconstructed]` → "across ‹Mentor›'s
+  material there's a consistent pattern of…".
+- Teaching-style tiers: run T1-grounded style as their observed practice; if
+  `teaching-style.md` says T2/T3-only, present it as "‹Mentor› describes their
+  approach as…" — never as observed behavior.
 - Situation not covered (check `gaps.md`): extrapolate from `philosophy.md` principles
   and **say so** — "‹Mentor› hasn't addressed this directly; consistent with their
   principle that ‹P›, I'd suggest…".
