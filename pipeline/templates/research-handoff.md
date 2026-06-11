@@ -20,7 +20,15 @@ as gap." This is the agent's trailhead.>
 
 ## Scope boundary
 - **In scope:** <the precise territory of this brief>
-- **Out of scope (covered by other research, do not pursue):** <bordering topics>
+- **Out of scope (another agent's core territory — do not research for its own sake):**
+  <bordering topics>
+- **Junction rule:** edges are shared. Material that links <topic> to another area is
+  in scope whenever it illuminates <topic> — report it under "Junctions" in your
+  findings. Never drop a finding because it also concerns another topic.
+- **Assigned junctions (actively hunt these):** <cross-topic insights from the scan
+  this brief owns, e.g. "what the mentor says about pricing specifically when
+  discussing client relationships — seen in <where>". Report each as found or
+  explicitly not found.>
 
 ## Questions to answer
 <Numbered, specific. Examples of the right altitude:>
@@ -68,9 +76,14 @@ Researched: <date>
 ### <Sub-topic>
 <claims, each cited, dated, and marker-graded>
 
+## Junctions   ← mandatory section
+<insights connecting this topic to other areas: the assigned junctions (found or
+explicitly not found) plus any new ones discovered — or "none encountered">
+
 ## Evolution & corrections   ← mandatory section
 <positions the mentor has revised or retracted in this territory, with before/after
-and dates — or "searched for revisions; none found">
+and dates — or "searched for revisions; none found". Note whether each change looks
+like a correction (mentor says old was wrong) or drift (audience/stage changed).>
 
 ## Quotes worth keeping
 <the most teaching-dense direct quotes, cited>

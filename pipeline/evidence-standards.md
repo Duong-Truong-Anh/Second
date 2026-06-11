@@ -1,7 +1,7 @@
 # Evidence Standards
 
 Shared rules for what counts as a mentor's teaching and how claims are graded.
-All three pipeline stages apply these. Research briefs must **inline** the relevant
+All pipeline stages apply these. Research briefs must **inline** the relevant
 rules (briefs are self-contained and can't reference this file).
 
 ## The evidence ladder — taught vs implied
@@ -27,11 +27,20 @@ elaborated in good faith is the pipeline's most dangerous failure mode. Therefor
    whether the mentor has revised, walked back, or contradicted it in later material.
    Search explicitly for retractions ("I was wrong about", "I no longer recommend",
    newer content on the same topic).
-3. **Latest position wins.** The brain teaches the current position. Superseded positions
-   are recorded as evolution (in `sources.md` and findings' "Evolution & corrections"
-   sections), never as live advice.
+3. **Corrections always win; drift is arbitrated.** Old positions come in two kinds,
+   and they resolve differently:
+   - **Correction** — the mentor says (or clearly shows) the old position was wrong.
+     The latest position wins unconditionally; the old one is recorded as evolution,
+     never taught as live advice. No era preference can resurrect a correction.
+   - **Drift** — nothing was retracted; the mentor's audience or stage changed (the
+     solo-freelancing advice of 2018 vs the agency-owner advice of 2026). Here newest
+     is *not* automatically most relevant: the era preference in the mentor's
+     `definition.md` (Stage 0) decides which version the brain centers on. The other
+     era is recorded as evolution with its stage context, available when the mentee
+     reaches it.
 4. **Findings must include an "Evolution & corrections" section** — even if its content
-   is "no position changes found" (that's a checked fact, not a default).
+   is "no position changes found" (that's a checked fact, not a default). Where
+   possible, findings note whether a change looks like a correction or drift.
 
 ## Teaching-style evidence tiers
 

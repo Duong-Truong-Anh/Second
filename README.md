@@ -1,7 +1,11 @@
-# My Mentor
+# Second
 
-A workflow for turning an AI coding agent into a personal mentor, built on the documented
-wisdom of real people you wish were mentoring you.
+> A *second* is what you call someone who is not the main act, but makes the main act
+> possible. A second voice. A second opinion. A guiding one.
+
+Second is a workflow for turning an AI agent into your personal mentor, built on the
+documented wisdom of real people you wish were mentoring you. You are the main act;
+this is your second.
 
 **The product is the workflow, not the mentors.** This repo gives you a repeatable pipeline
 for researching any mentor's teachings, distilling them into a standardized "mentor brain,"
@@ -12,19 +16,25 @@ instances; the pipeline is the point.
 ## How it works
 
 ```
-You name a mentor
+┌─ 0. DEFINITION ────────────────────────────────────────────┐
+│  Pin down WHO exactly, WHAT the mentorship is for, WHICH   │
+│  era of the mentor matters, and WHERE you're starting.     │
+└────────────────────────────────────────────────────────────┘
         │
         ▼
 ┌─ 1. BROAD SCAN ────────────────────────────────────────────┐
 │  Map the full surface of the mentor's teachings: the WHAT. │
-│  Topics, frameworks, recurring themes, where they teach.   │
+│  Topics, frameworks, junctions between topics, and a       │
+│  source hunt for recorded 1-on-1 mentoring behavior.       │
 └────────────────────────────────────────────────────────────┘
         │
         ▼
 ┌─ 2. RESEARCH HANDOFFS ─────────────────────────────────────┐
 │  Partition the scan into independent research briefs — the │
-│  WHYs and HOWs. Each brief is self-contained and can be    │
-│  run by any AI agent (subagent, another tool, a friend).   │
+│  WHYs and HOWs. Each brief is self-contained and runnable  │
+│  by any engine: Claude subagents, Gemini Deep Research,    │
+│  Perplexity, or a human. The findings format is the        │
+│  contract; the engine is interchangeable.                  │
 └────────────────────────────────────────────────────────────┘
         │
         ▼
@@ -72,7 +82,7 @@ its strictest evidence requirement and will warn you when it can't find any.
 | Path | What it is |
 |---|---|
 | `pipeline/` | The workflow itself — stage instructions and templates. The product. |
-| `mentors/<name>/` | One mentor: scan, research handoffs + findings, and the curated `brain/`. |
+| `mentors/<name>/` | One mentor: definition, scan, research handoffs + findings, and the curated `brain/`. |
 | `mentee/` | Who you are — shared across all mentorship tracks. |
 | `workspace/<track>/` | One active mentorship: charter, progress notes, session logs. |
 | `.claude/skills/` | `/mentor` (run a session) and `/mentor-build` (run the pipeline). |
@@ -80,7 +90,8 @@ its strictest evidence requirement and will warn you when it can't find any.
 
 ## Quick start
 
-1. Build a mentor: `/mentor-build <mentor name>` — runs the pipeline above.
+1. Build a mentor: `/mentor-build <mentor name>` — opens with a short definition Q&A
+   (who exactly, what for, which era of them), then runs the pipeline above.
 2. Start mentorship: `/mentor <mentor name>` — first session is an intake; the mentor
    assesses where you are and sets up the track. Every later session picks up where
    you left off.

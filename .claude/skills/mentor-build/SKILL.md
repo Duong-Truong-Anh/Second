@@ -8,12 +8,17 @@ description: Build a mentor brain by running the research pipeline (broad scan �
 Run the three-stage pipeline defined in `pipeline/`. The argument is the mentor's name;
 if the mentorship domain isn't obvious or given, ask for it before starting.
 
-## Stage 0 — Setup
+## Stage 0 — Definition
 1. Slugify the name (e.g. `jamie-brindle`) and create `mentors/<slug>/`.
 2. If the mentor already exists, ask: refresh the scan, add research areas, or rebuild?
+3. Run the Stage 0 Q&A per `pipeline/00-definition.md` — identity anchor, domain & goal,
+   **era preference** (explain the drift problem: a mentor's newest teaching may target
+   a different stage than the user needs; corrections always win regardless, the
+   preference only arbitrates drift), and the mentee's starting point. Conversational,
+   not a form. Write `mentors/<slug>/definition.md`.
 
 ## Stage 1 — Broad scan
-Follow `pipeline/01-broad-scan.md` exactly (standards: `pipeline/00-evidence-standards.md`).
+Follow `pipeline/01-broad-scan.md` exactly (standards: `pipeline/evidence-standards.md`).
 Use web search/fetch extensively — the scan lives or dies on breadth. Write
 `mentors/<slug>/scan.md` in the prescribed structure, including the viability
 assessment, coverage map, and the teaching-style **source hunt** (artifacts, not
@@ -40,15 +45,31 @@ Follow `pipeline/02-research-handoffs.md`:
    source-hunt table plus any user-supplied sources (mandatory unless the user skipped
    it at the checkpoint).
 
-Then ask the user how to run them:
-- **Subagents (default):** spawn one research agent per brief, prompt = the brief file
-  verbatim plus one line: "Write your findings to
-  `mentors/<slug>/research/findings/NN-<topic>.md`." Run them in parallel.
-- **External:** the user copies briefs into other AI tools and pastes results back into
-  `research/findings/` — wait for them to say findings are in.
+Then ask the user which research engine to use (AskUserQuestion; see the engine table
+in `pipeline/02-research-handoffs.md` Step 3 — summarize trade-offs honestly: Gemini =
+widest sweep but verbose and robots-bound; Perplexity = best practical reach, ~3 free
+Pro searches/day/account so multiple accounts are normal; Claude subagents = fully
+automated but weakest web reach). Mixing engines across briefs is fine.
 
-Apply the acceptance check from `pipeline/02-research-handoffs.md` to each finding.
-Findings that fail (uncited claims, generic filler) get re-run or flagged, not synthesized.
+- **Claude subagents:** spawn one per brief in parallel, prompt = the brief verbatim
+  plus: "When done, write your findings as a markdown report to
+  `mentors/<slug>/research/findings/NN-<topic>.md`."
+- **Gemini Deep Research:** append the Gemini verbosity adapter (from
+  `02-research-handoffs.md`) to each handoff file, create the empty findings files,
+  then guide the user step by step: one brief per fresh Deep Research instance →
+  approve the research plan it proposes → when the report is ready, paste it into the
+  matching findings file (into the file, not back into a prompt — it gets diluted).
+- **Perplexity Search Pro:** same guided flow, one brief per fresh Pro search; remind
+  the user that briefs are self-contained so spreading them across multiple accounts
+  works, and conversations don't need to coexist in one account.
+
+Remind the user of the video caveat: no engine watches video; for the observational
+style brief, transcripts dropped into `research/user-sources/` are the highest-leverage
+manual step.
+
+Apply the acceptance check from `pipeline/02-research-handoffs.md` to each finding as
+it arrives. Findings that fail (uncited claims, generic filler, missing mandatory
+sections) get re-run or flagged, not synthesized.
 
 ## Stage 3 — Synthesis
 Follow `pipeline/03-synthesis.md`. Build `mentors/<slug>/brain/` from the templates in

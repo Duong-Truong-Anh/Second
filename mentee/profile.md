@@ -15,7 +15,10 @@ need (these can differ; record both).>
 
 ## Experience level by domain
 <Per active track: honest assessment, evidence-based — what they've actually done,
-not what they've read about.>
+not what they've read about. Each entry carries a date:
+"<track>: <stage> — last verified <date>, based on <evidence>".
+A stale verification is a hypothesis, not a fact: sessions re-verify before
+calibrating their teaching to it, and in-session evidence overrides this file.>
 
 ## How they learn
 <What's worked / hasn't for them. Do they need pushing or encouraging? Do they

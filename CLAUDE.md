@@ -1,8 +1,8 @@
-# My Mentor — repo guide
+# Second — repo guide
 
-This repo is a workflow for building AI mentors from real people's documented teachings
-and running ongoing 1-on-1 mentorship sessions. Read `README.md` for the concept,
-`DESIGN.md` for decisions and open questions.
+This repo is **Second**: a workflow for building AI mentors from real people's
+documented teachings and running ongoing 1-on-1 mentorship sessions. Read `README.md`
+for the concept, `DESIGN.md` for decisions and open questions.
 
 ## Two modes — keep them separate
 1. **Sessions IN the system:** the user invokes `/mentor <name>` (run a session) or

@@ -9,15 +9,17 @@ One exception to "breadth only": **teaching style is not scanned, it is source-h
 ("they ask diagnostic questions") that poison Stage 2; what Stage 2 needs is a list of
 artifacts where the behavior is actually visible.
 
-**Input:** mentor name + the domain you want mentorship in.
+**Input:** `mentors/<slug>/definition.md` (Stage 0 — identity anchor, domain & goal,
+era preference, mentee starting point).
 **Output:** `mentors/<slug>/scan.md`
-**Standards:** apply `pipeline/00-evidence-standards.md` throughout.
+**Standards:** apply `pipeline/evidence-standards.md` throughout.
 
 ## Procedure
 
-1. **Identify the person and check viability.** Disambiguate (same-name collisions are
-   common). Record who they are, their track record, and why they're worth treating as
-   a mentor in this domain. Then assess the public footprint: this workflow only works
+1. **Identify the person and check viability.** Confirm the identity anchor from
+   `definition.md` (same-name collisions are common — verify against the user's
+   confirmable markers). Record who they are, their track record, and why they're
+   worth treating as a mentor in this domain. Then assess the public footprint: this workflow only works
    for people whose teaching is publicly documented. If the footprint is thin (a private
    coach, an author of one book, someone known mostly by reputation), say so *now* —
    recommend against proceeding rather than letting twelve research briefs fail slowly.
@@ -35,6 +37,13 @@ artifacts where the behavior is actually visible.
      when it looks for them, and Stage 2's currency checks depend on this head start.
    - Their own story arc (failures and turning points they teach from)
    - Common audience questions they answer and the shape of their answers
+   - **Cross-topic junctions** — insights that exist only where two topics meet: the
+     thing they say about pricing only when discussing client relationships, the thing
+     about creative process that only surfaces when they talk about failure. Record the
+     topic pair, the insight in one line, and where it was observed. These are
+     first-class inventory items, not footnotes to either topic — a partition that
+     never sees them will lose them (Stage 2 assigns each junction to a brief
+     explicitly).
 
    Tag every inventory item twice:
    - **Evidence type** from the ladder: `[stated]`, `[demonstrated]`, or `[reconstructed]`
@@ -88,6 +97,8 @@ Scanned: <date>
 ### Self-corrections & changed positions
 ### Their story arc
 ### Common audience questions
+### Cross-topic junctions
+<topic pair · the insight in one line · where observed>
 
 ## Teaching-style source hunt
 | # | Artifact | Tier | Single/Collection | What interaction is visible | Link |

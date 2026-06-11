@@ -52,7 +52,7 @@ Resolves "taught vs implied." A mentor's teaching includes what they explicitly 
 what they demonstrate through examples and stories without naming, and patterns
 reconstructible from ≥2 independent instances — each marked as such, with markers
 surviving into the brain and into session attribution. Generic domain knowledge stays
-out. Defined once in `pipeline/00-evidence-standards.md`; briefs inline it (briefs are
+out. Defined once in `pipeline/evidence-standards.md`; briefs inline it (briefs are
 self-contained). Rationale: without an explicit boundary, different scan agents draw
 it differently and mentors get inconsistent brains.
 
@@ -91,6 +91,57 @@ The workflow only works for publicly documented teachers. Stated in the README; 
 scan's first step includes a viability verdict so an unsuitable mentor fails fast,
 before research is spent.
 
+### D12. Research engines are interchangeable; the findings format is the contract (2026-06-11)
+Stage 2 assumed agents can search the whole web — false, and Claude's native fetch is
+the most restricted of the realistic options (sandboxed cite-then-fetch, robots-bound,
+no paywalls). Stage 2 now ends with an engine choice the user makes per build:
+**Gemini Deep Research** (widest sweep; verbose academic output tamed by an adapter
+block appended to each brief), **Perplexity Search Pro** (best practical reach;
+~3 free Pro searches/day/account, so spreading self-contained briefs across multiple
+accounts is a supported pattern), or **Claude subagents** (fully automated, weakest
+reach). External paths get a guided copy-paste flow: one brief per fresh instance,
+reports pasted into pre-created findings files — never back into prompts. Mixing
+engines across briefs is fine. Caveat recorded: no engine watches video; transcripts
+in `research/user-sources/` are the highest-leverage manual step for the style brief.
+
+### D13. Junction insights: exclusive centers, shared edges (2026-06-11)
+Mentors' insights often live only at the intersection of two topics (what they say
+about pricing only when discussing client relationships). A hard-boundary partition
+guarantees those fall between briefs — neither claims them, neither finds them.
+Three-part fix: (a) the scan inventories **cross-topic junctions** as first-class
+items (the coverage map can't catch what was never named); (b) the partition rule
+"minimal overlap" is replaced by **exclusive centers, shared edges** — briefs may not
+research a neighbor's core for its own sake but must report cross-topic material under
+a mandatory "Junctions" findings section, and every scanned junction is assigned to
+exactly one brief in `00-partition.md` (an unassigned junction is a partition bug);
+(c) synthesis dedupes edge duplication and cross-references each junction insight from
+both of its topics in the brain.
+
+### D14. Stage 0 — Definition; corrections vs drift (2026-06-11; refines D9)
+"Latest position wins" hid an assumption: that the mentor's newest teaching is the
+most relevant. True for **corrections** (the mentor says the old position was wrong —
+latest wins unconditionally), false for **drift** (nothing retracted; the mentor's
+audience/stage moved — e.g. solo-freelancer advice → agency-owner advice). A new
+Stage 0 (`pipeline/00-definition.md`) settles, in a short Q&A before any research:
+identity anchor (disambiguation), domain & goal (bounds scan and partition), **era
+preference** (current / earlier phase / stage-matched — arbitrates drift only), and
+the mentee's starting point. Output: `mentors/<slug>/definition.md`. Evidence
+standards renamed to `pipeline/evidence-standards.md` (cross-cutting standards, not a
+numbered stage).
+
+### D15. The mentee profile is a hypothesis, not a fact (2026-06-11)
+Three static documents (brain, profile, progress) simulate a dynamic relationship, so
+calibration goes stale: a session reading a three-month-old profile teaches who the
+mentee *was*. Mitigations now: sessions open by re-verifying load-bearing facts;
+in-session evidence overrides the documents; profile/progress may be updated
+mid-session (session close is the minimum checkpoint, not the only one); stage
+assessments carry a "last verified" date, and a stale verification is explicitly a
+hypothesis to re-check. The deeper dynamic-mentee-model problem stays open (O8).
+
+### D16. Project name: Second (2026-06-11)
+A second voice, a second opinion, a guiding one — the one who is not the main act but
+makes the main act possible. The mentee is the main act.
+
 ## Open questions
 
 - **O1. Mentor instruction format.** Is a markdown brain + session protocol enough, or
@@ -116,4 +167,11 @@ before research is spent.
 - **O7. Partition quality.** D10 gives Stage 2 explicit partitioning criteria, but
   whether they produce good partitions is unproven. Revisit after the Jamie Brindle
   build — compare the partition `00-partition.md` records against what synthesis
-  actually needed.
+  actually needed, including whether junction assignment (D13) caught the real
+  intersections or only the ones the scan happened to name.
+- **O8. Dynamic mentee modeling.** D15's mitigations make staleness *detectable*
+  (verification dates, hypothesis framing) but the model is still static files
+  updated at checkpoints. Candidate future shape: calibration decay — a stage
+  assessment older than N sessions is auto-treated as unverified and triggers
+  re-assessment; possibly a structured mentee changelog separate from prose notes.
+  Needs pilot data on how fast calibration actually drifts before designing more.

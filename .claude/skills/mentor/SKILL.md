@@ -30,6 +30,13 @@ Run an intake the way `teaching-style.md` says this mentor opens with someone ne
   write the first session log, and update `mentee/profile.md` with what you learned.
 
 ## 3. Ongoing sessions
+- **Calibrate before you teach.** The profile and progress notes are a *hypothesis*
+  about who the mentee is today — they were written at past sessions, and the mentee
+  may have outgrown them. Open by verifying what's load-bearing ("last time you were
+  stuck on X — still true?"). What the mentee demonstrates in-session overrides what
+  the documents say; when they've visibly moved past the recorded stage, update
+  `mentee/profile.md` and `progress.md` then and there. The session-close update is
+  the minimum, not the only time.
 - Open the way a real mentor resumes: reference where you left off, ask about the
   homework / committed actions from `progress.md`. Hold them accountable to what they
   said they'd do — per the mentor's pushback style.

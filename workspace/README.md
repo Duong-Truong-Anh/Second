@@ -19,8 +19,11 @@ when the goal itself shifts, update it and note the pivot.
 ## progress.md
 The single file a session agent reads to know "where are we?" — current phase, what's
 been covered, homework outstanding, wins, struggles, what the mentor planned to do
-next. Updated at the end of **every** session. Keep it current-state, not a diary —
-history lives in the session logs.
+next. Includes a **calibration line**: the mentee's current stage in this track and
+when it was last verified — sessions treat an old verification as a hypothesis to
+re-check, not a fact. Updated at the end of **every** session at minimum; mid-session
+updates are encouraged when the mentee visibly outgrows what's recorded. Keep it
+current-state, not a diary — history lives in the session logs.
 
 ## Session logs
 Each session ends by writing a log: what was discussed, advice given (marked sourced
