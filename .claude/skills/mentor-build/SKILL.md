@@ -78,6 +78,11 @@ the user: what the brain covers, what's in `gaps.md`, and suggest starting with
 `/mentor <slug>`.
 
 ## Throughout
-- Commit at each stage boundary (scan / handoffs+findings / brain).
+- **Do not commit mentor artifacts.** `mentors/` is gitignored (personal data + a real
+  person's distilled teachings — neither belongs in the public repo; see DESIGN.md D17).
+  Stage boundaries (definition / scan / handoffs+findings / brain) are checkpoints to
+  pause and verify at, not commits. Only commit if changes touched the tracked workflow
+  (`pipeline/`, skills, docs) — or if the user runs a private fork that removed the
+  ignore rules.
 - Never let general knowledge masquerade as the mentor's teaching — the pipeline's
   value is provenance.

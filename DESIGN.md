@@ -142,6 +142,19 @@ hypothesis to re-check. The deeper dynamic-mentee-model problem stays open (O8).
 A second voice, a second opinion, a guiding one — the one who is not the main act but
 makes the main act possible. The mentee is the main act.
 
+### D17. Privacy boundary: instances are gitignored, only the workflow is tracked (2026-06-11)
+The pilot build committed `mentors/jamie-brindle/` — wrong for two reasons: the
+definition/profile/session files contain the *user's* personal context, and a mentor
+brain is a real person's distilled teachings, which isn't ours to publish in a public
+repo. Now `.gitignore` excludes `mentors/`, `mentee/`, and `workspace/` (their READMEs
+stay tracked as structure docs); the blank mentee template moved to
+`pipeline/templates/mentee-profile.md` so sessions can create `mentee/profile.md`
+locally. The skills no longer commit stage boundaries or session artifacts — boundaries
+are verification checkpoints, and the files themselves are the record. Escape hatch:
+private forks can delete the ignore rules to get version history back. The pilot's four
+local commits were dropped before ever being pushed; nothing personal reached the
+public repo.
+
 ## Open questions
 
 - **O1. Mentor instruction format.** Is a markdown brain + session protocol enough, or

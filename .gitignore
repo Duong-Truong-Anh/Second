@@ -1,0 +1,8 @@
+# Personal instances stay local — the workflow is the product, your mentors and
+# mentorship are your own. (Running a private fork and want version history for
+# your mentors and sessions? Delete these lines.)
+/mentors/*
+!/mentors/README.md
+/mentee/*
+/workspace/*
+!/workspace/README.md

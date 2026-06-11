@@ -1,8 +1,10 @@
 # Mentee Profile
 
-> Who the mentee is, shared across all mentorship tracks. The mentor fills and updates
-> this through sessions — especially the first-session intake. Don't interrogate the
-> mentee with a form; learn these things conversationally and record them here.
+> Who the mentee is, shared across all mentorship tracks. Lives at `mentee/profile.md`
+> (gitignored — personal). If that file doesn't exist yet, a session creates it from
+> this template. The mentor fills and updates it through sessions — especially the
+> first-session intake. Don't interrogate the mentee with a form; learn these things
+> conversationally and record them here.
 
 ## Basics
 - **Name / goes by:**

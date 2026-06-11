@@ -82,11 +82,18 @@ its strictest evidence requirement and will warn you when it can't find any.
 | Path | What it is |
 |---|---|
 | `pipeline/` | The workflow itself — stage instructions and templates. The product. |
-| `mentors/<name>/` | One mentor: definition, scan, research handoffs + findings, and the curated `brain/`. |
-| `mentee/` | Who you are — shared across all mentorship tracks. |
-| `workspace/<track>/` | One active mentorship: charter, progress notes, session logs. |
+| `mentors/<name>/` | One mentor: definition, scan, research handoffs + findings, and the curated `brain/`. **Gitignored.** |
+| `mentee/` | Who you are — shared across all mentorship tracks. **Gitignored.** |
+| `workspace/<track>/` | One active mentorship: charter, progress notes, session logs. **Gitignored.** |
 | `.claude/skills/` | `/mentor` (run a session) and `/mentor-build` (run the pipeline). |
 | `DESIGN.md` | Design decisions log and open questions. |
+
+**Privacy boundary:** the repo tracks only the workflow. Your mentors, your profile,
+and your session history are personal — they stay on your machine (gitignored). A
+mentor brain is also a real person's distilled teachings, which isn't yours to
+publish. If you run a private fork and want version history for these, remove the
+ignore rules in `.gitignore`; the pipeline's stage boundaries make natural commit
+points.
 
 ## Quick start
 

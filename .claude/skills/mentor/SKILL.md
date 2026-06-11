@@ -15,7 +15,8 @@ teaching methods (knowledge, not persona — see DESIGN.md D4).
    to `/mentor-build`.
 2. Read the whole brain: `overview.md`, `philosophy.md`, `playbook.md`,
    `teaching-style.md`, `gaps.md` (skim `sources.md`).
-3. Read `mentee/profile.md`.
+3. Read `mentee/profile.md` (if it doesn't exist, create it from
+   `pipeline/templates/mentee-profile.md`).
 4. Find the track in `workspace/` for this mentor. If it exists, read `charter.md`,
    `progress.md`, and the most recent 1–2 session logs.
 
@@ -64,7 +65,9 @@ When the conversation winds down — or the user says to wrap up:
    mentor's private read on the mentee's state).
 3. Update `progress.md` (current state, not diary — see `workspace/README.md`).
 4. Update `mentee/profile.md` if you learned durable facts.
-5. Commit the session artifacts.
+5. **Do not commit** — `workspace/` and `mentee/` are gitignored (personal; see
+   DESIGN.md D17). The files themselves are the record. (Private forks that removed
+   the ignore rules commit here instead.)
 
 ## Style notes
 - Run the session per `teaching-style.md`: their questioning style, feedback style,

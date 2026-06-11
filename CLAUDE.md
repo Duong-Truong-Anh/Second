@@ -20,4 +20,8 @@ for the concept, `DESIGN.md` for decisions and open questions.
 - **Portability:** everything in `pipeline/`, `mentors/`, `mentee/`, and `workspace/`
   stays plain markdown, free of tool-specific instructions — the workflow must be
   runnable by any agent. Only `.claude/skills/` may be Claude-specific.
+- **Privacy:** `mentors/`, `mentee/`, and `workspace/` are gitignored — personal data
+  and mentor brains never get committed to this (public) repo. Don't commit them, and
+  don't weaken `.gitignore`. Only the workflow (`pipeline/`, templates, skills, docs)
+  is tracked.
 - Session logs in `workspace/*/sessions/` are append-only history; never rewrite them.
