@@ -39,7 +39,13 @@ synthesis; they are not editorial decoration to be cleaned up.
    T2/T3-only (the user proceeded past the Stage 1 gate without T1 evidence),
    `teaching-style.md` must say so at the top, and sessions must present style-derived
    behavior as the mentor's self-description, not observed practice.
-7. **Write for the session, not the archive.** The brain's reader is a future agent
+7. **Build the voice profile.** From the voice findings, synthesize `voice.md`:
+   register, explanatory structure, signature metaphors/phrasings (kept *verbatim* —
+   voice is in the exact words), vocabulary, and where they're blunt vs soft. This is
+   the file that lets a session *sound* like the mentor instead of reading their notes.
+   Keep the voice-vs-impersonation boundary explicit (see evidence-standards): it
+   captures how they express, never their biography or unsourced positions.
+8. **Write for the session, not the archive.** The brain's reader is a future agent
    mid-conversation with a mentee. Frameworks should be stated operationally (when to
    invoke, the steps, what good looks like), not historically.
 
@@ -50,6 +56,7 @@ synthesis; they are not editorial decoration to be cleaned up.
 | `overview.md` | Who the mentor is, domains, why they're credible. The 2-minute read. |
 | `philosophy.md` | Core beliefs and principles — the WHYs. What they'd never compromise on. |
 | `playbook.md` | Frameworks, methods, tactics, workflows — the HOWs. Operational form. |
+| `voice.md` | How they talk and explain — register, metaphors, phrasings. Sessions speak in it. |
 | `teaching-style.md` | How they mentor 1-on-1: intake questions, feedback style, sequencing, pushback patterns. |
 | `sources.md` | Master provenance ledger; conflicts and evolution noted. |
 | `gaps.md` | What we know we don't have. Powers labeled blending. |
@@ -61,6 +68,8 @@ synthesis; they are not editorial decoration to be cleaned up.
   with its evidence-ladder marker intact.
 - No superseded position appears as live advice; evolution is recorded in `sources.md`.
 - `teaching-style.md` claims carry tiers, and its top states the overall evidence level.
+- `voice.md` exists and quotes the mentor verbatim — enough for a session to speak in
+  their register without impersonating them.
 - `gaps.md` contains every `[absent]` item from the scan's coverage map plus all
   research-reported gaps — sessions can tell extrapolation from teaching *before* they
   open their mouth.

@@ -44,6 +44,9 @@ Follow `pipeline/02-research-handoffs.md`:
    `pipeline/templates/research-handoff-observational.md`, pasting in the scan's
    source-hunt table plus any user-supplied sources (mandatory unless the user skipped
    it at the checkpoint).
+4. Write the **voice brief** using `pipeline/templates/research-handoff-voice.md`
+   (mandatory) — it mines monologue content for register/phrasings/metaphors so sessions
+   can speak in the mentor's voice. Well-sourced; can run lighter than topic briefs.
 
 Then ask the user which research engine to use (AskUserQuestion; see the engine table
 in `pipeline/02-research-handoffs.md` Step 3 — summarize trade-offs honestly: Gemini =

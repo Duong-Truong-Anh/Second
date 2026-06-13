@@ -155,23 +155,76 @@ private forks can delete the ignore rules to get version history back. The pilot
 local commits were dropped before ever being pushed; nothing personal reached the
 public repo.
 
+### D18. Provenance in the artifact, voice in the session (2026-06-13; refines D3, D4)
+Running the pilot first session exposed that we put provenance *in the conversation*:
+inline source IDs (`[S19]`) and "Jamie teaches…" on every claim made the mentor feel
+like a database read-out — and, ironically, made real-world advice read like theory,
+violating the mentor's own ethos. Two coupled fixes:
+- **Provenance is an auditing property of the brain, not a speech act.** The brain and
+  session logs carry the full trail (markers, ledger, gaps); sessions speak with
+  internalized authority. The only spoken honesty signal is sourced-vs-extrapolated,
+  voiced naturally and only when crossing into what the brain doesn't cover. (Refines
+  D3's labeled blending — the integrity guarantee is unchanged, only the delivery.)
+- **Knowledge AND voice, not impersonation** (refines/partly reverses D4). The old
+  "knowledge, not persona" rule conflated *voice* (how they talk — well-sourced from
+  monologue content) with *impersonation* (claiming to be them — forbidden). We threw
+  away sourced signal out of fear of the unsourced kind. Now: a new `voice.md` brain
+  file (+ a mandatory voice research brief, a scan voice section, and a synthesis step)
+  captures register/phrasings/metaphors verbatim; sessions speak in it but never claim
+  the mentor's identity or biography. User chose this stance ("Jamie's voice, not his
+  identity") over full first-person and over keeping the neutral third-person. The
+  voice/teaching-style distinction is sharp: voice = how they sound (sourced);
+  teaching-style = how they mentor 1-on-1 (often unsourced, the T1 problem).
+
+### D19. Memory architecture: nested mentees/<name>/<mentor>/ (2026-06-13; supersedes D-era workspace/)
+The single shared `mentee/profile.md` + `workspace/<track>/` split wasn't future-proof:
+no multi-mentee support, and identity (cross-mentor) was tangled with relationship state
+(per-mentor). New structure: `mentees/<mentee>/profile.md` (who I am, shared across all
+mentors) + `mentees/<mentee>/<mentor-slug>/journey.md` + `sessions/` (the memory of one
+mentorship). Two kinds of memory, two lifetimes, two levels. `mentee/` and `workspace/`
+removed; `.gitignore` now covers `mentors/` + `mentees/`.
+
+### D20. journey.md models what a mentor actually remembers (2026-06-13; answers part of O2/O8)
+The pilot session tracked nothing — not even the user's name. `journey.md` is built on
+six axes a real mentor holds about a person: **calibration** (dated stage hypothesis),
+**open loops** (commitments with honest status), **covered ground** (build, don't
+repeat), **the read** (private working model of how they tick — the axis that makes
+continuity feel like a relationship), and **next move**; identity (#0) lives up at
+`profile.md`. Plus an execution rule the failure exposed: **write memory incrementally
+at natural beats** (identity right after intake, a commitment when struck), not batched
+at session close — the pilot died to a rate limit and saved nothing.
+
+### D21. Commitments are negotiated, not manufactured (2026-06-13; refines O5)
+The session skill *required* a next-action output, so homework got minted whether or not
+the mentee would do it — and the pilot assigned proof-capture *before* learning "I'm bad
+at these things." Fix: continuity comes from recording *state*, not from minting a task;
+when a next step is genuinely right, propose then calibrate to the smallest version the
+mentee will actually do, and record the negotiated form. Sometimes the right next step is
+none. Kept as a principle, not a "always ask for the smallest version" script (which
+would become its own tic). The external critique that surfaced this was adopted at its
+core but not its claim that homework is *only* a continuity artifact — capturing proof
+was genuinely the right step; the flaw was assigning it un-negotiated.
+
 ## Open questions
 
 - **O1. Mentor instruction format.** Is a markdown brain + session protocol enough, or
   do mature mentors need more structure (per-topic skills, a curriculum graph, retrieval
   over large source sets)? Revisit after the pilot brain exists and we see its size.
-- **O2. Mentee assessment.** What does the first-session intake actually measure, and
-  how does the mentor detect progress level in later sessions? Current answer: intake
-  questions + `progress.md`, but a real assessment rubric per domain may be needed.
-- **O3. Multi-mentor.** Can tracks consult multiple mentors? Do mentors ever disagree
-  on record, and how is that surfaced? Deferred until ≥2 brains exist.
+- **O2. Mentee assessment.** Partly answered by D20 (the calibration + read axes of
+  journey.md). Still open: a real per-domain assessment *rubric* — the intake still
+  measures stage impressionistically, not against a yardstick the mentor brain defines.
+- **O3. Multi-mentor.** D19's `mentees/<name>/<mentor>/` makes multiple mentors per
+  mentee structural. Still open: can a *session* consult more than one brain at once,
+  do mentors ever disagree on record, and how is that surfaced? Deferred until ≥2 brains
+  are in real use.
 - **O4. Source ingestion.** Partially answered by D8: `mentors/<slug>/research/user-sources/`
   exists for user-supplied teaching-style evidence. Still open: a general inbox for
   user-supplied material on *topic* briefs (transcripts, course notes, books), and how
   research agents should weigh private material against public material.
-- **O5. Session cadence + homework.** Real mentorship includes between-session work.
-  How does the mentor assign, track, and review homework? Sketched in the session
-  protocol; needs validation in the pilot.
+- **O5. Session cadence + homework.** Largely answered by D21 (negotiated, calibrated,
+  tracked as journey.md open loops with status) — but the *cadence* half is open: nothing
+  yet handles time between sessions (a commitment agreed "this week" has no notion of how
+  long it's actually been, no nudge, no decay). Revisit once multiple real sessions exist.
 - **O6. Quality gate for research findings.** How do we verify a research agent didn't
   hallucinate? Current answer: citation + dating requirements, evidence-ladder markers,
   the currency rule, and synthesis cross-checking. May still need a dedicated
@@ -182,9 +235,13 @@ public repo.
   build — compare the partition `00-partition.md` records against what synthesis
   actually needed, including whether junction assignment (D13) caught the real
   intersections or only the ones the scan happened to name.
-- **O8. Dynamic mentee modeling.** D15's mitigations make staleness *detectable*
-  (verification dates, hypothesis framing) but the model is still static files
-  updated at checkpoints. Candidate future shape: calibration decay — a stage
-  assessment older than N sessions is auto-treated as unverified and triggers
-  re-assessment; possibly a structured mentee changelog separate from prose notes.
-  Needs pilot data on how fast calibration actually drifts before designing more.
+- **O8. Dynamic mentee modeling.** D15 + D20 give detectable staleness (dated
+  calibration, the "read" axis, incremental writes), but the model is still prose files
+  updated by hand each session. Candidate future shape: calibration decay tied to elapsed
+  time/sessions (overlaps O5's cadence gap). Needs data from multiple real sessions on
+  how fast calibration actually drifts before designing more.
+- **O9. Voice without 1-on-1 behavior.** For Jamie, `voice.md` is well-sourced but
+  `teaching-style.md` is degraded (T2/T3). A session now has a strong sense of how he
+  *sounds* but a weak sense of how he *runs a session*. Untested whether good voice
+  papers over thin teaching-behavior convincingly, or whether the gap shows. Watch in
+  the re-run of the pilot session.

@@ -3,6 +3,5 @@
 # your mentors and sessions? Delete these lines.)
 /mentors/*
 !/mentors/README.md
-/mentee/*
-/workspace/*
-!/workspace/README.md
+/mentees/*
+!/mentees/README.md

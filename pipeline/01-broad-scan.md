@@ -60,7 +60,14 @@ era preference, mentee starting point).
    (a playlist, series, or recurring format — collections are noted as such; Stage 2
    enumerates and mines every member). T2 self-descriptions and T3 structural evidence
    are listed too, but separately — they don't satisfy the gate.
-5. **Propose research candidates.** Group `[covered]` and `[thin]` items into candidate
+5. **Note voice & register.** Separately from *behavior* (step 4), capture how they
+   *talk and explain* — register, recurring metaphors, catchphrases, explanatory
+   structure. Unlike teaching behavior, voice is **well-sourced**: it's all over their
+   monologue content. A few representative verbatim lines plus the channels richest in
+   them is enough at scan altitude — Stage 2's voice brief does the depth. (Don't skip
+   this because it "isn't teaching"; sessions speak in this voice, and missing it is what
+   makes a mentor feel like a generic agent reading notes.)
+6. **Propose research candidates.** Group `[covered]` and `[thin]` items into candidate
    research areas. These are **proposals only — Stage 2 owns the final partition**
    (see `02-research-handoffs.md` for the partitioning criteria). When in doubt, don't
    force a grouping; flag the item as unplaced.
@@ -103,6 +110,10 @@ Scanned: <date>
 ## Teaching-style source hunt
 | # | Artifact | Tier | Single/Collection | What interaction is visible | Link |
 **Verdict:** T1 evidence found / NOT found
+
+## Voice & register
+<a few representative verbatim lines; recurring metaphors/catchphrases; the channels
+richest in voice. Well-sourced — note if unexpectedly thin.>
 
 ## Coverage map
 **Covered:** <list> · **Thin:** <list> · **Absent:** <list>

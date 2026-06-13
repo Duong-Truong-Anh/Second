@@ -87,6 +87,18 @@ It uses `pipeline/templates/research-handoff-observational.md` and is **mandator
   *corroborated or contradicted* by T1 observations — contradictions are findings gold;
   report them explicitly.
 
+### The voice brief is also required
+
+It uses `pipeline/templates/research-handoff-voice.md` and is **mandatory** — sessions
+speak in the mentor's voice, and skipping this is what makes a mentor feel like a
+generic agent reading notes. Unlike the teaching-style brief, voice is **well-sourced**:
+it mines the mentor's high-volume *monologue* content (videos, posts, talks) for
+register, metaphors, phrasings, and explanatory structure — not 1-on-1 interaction. It
+captures *how they sound*, not *what they teach* (the topic briefs own the content) and
+not *how they mentor* (the teaching-style brief owns behavior). Quote verbatim — voice
+lives in exact words, and paraphrase destroys it. This brief can run lighter than the
+topic briefs; its goal is texture, not coverage.
+
 ## Step 3 — Choose a research engine and run
 
 Briefs are engine-agnostic: **the findings format is the contract; the engine is

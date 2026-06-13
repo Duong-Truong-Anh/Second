@@ -40,29 +40,33 @@ instances; the pipeline is the point.
         ▼
 ┌─ 3. SYNTHESIS ─────────────────────────────────────────────┐
 │  Findings come back → curated into a standardized mentor   │
-│  brain: philosophy, playbook, teaching style, sources,     │
-│  known gaps. Every claim traceable to a source.            │
+│  brain: philosophy, playbook, voice, teaching style,       │
+│  sources, known gaps. Every claim traceable to a source.   │
 └────────────────────────────────────────────────────────────┘
         │
         ▼
 ┌─ 4. SESSIONS ──────────────────────────────────────────────┐
 │  /mentor <name> starts a 1-on-1 session. The mentor knows  │
-│  you (mentee profile), remembers past sessions (progress   │
-│  notes), and teaches the way the real mentor teaches.      │
+│  you (mentee profile), remembers this mentorship (journey   │
+│  notes), speaks in the mentor's voice, and teaches the way  │
+│  the real mentor teaches.                                   │
 └────────────────────────────────────────────────────────────┘
 ```
 
 ## Core principles
 
-1. **Knowledge, not persona.** The mentor brain captures what a mentor knows, believes,
-   and how they teach — it does not impersonate them. Sessions don't mimic voice or
-   personality; they apply the mentor's actual frameworks and methods to your situation.
-2. **Labeled blending.** When the documented material covers your situation, the mentor
-   says so ("Jamie explicitly teaches X here"). When it doesn't, the mentor extrapolates
-   from the mentor's principles and *labels it as extrapolation*. You always know what's
-   sourced and what's inferred.
-3. **Provenance everywhere.** Every claim in a mentor brain traces back to a source.
-   No general-knowledge filler dressed up as the mentor's wisdom.
+1. **Knowledge and voice, not impersonation.** The brain captures what a mentor knows,
+   believes, how they teach, *and how they talk* — and sessions speak in that voice
+   (their register, phrasings, metaphors, sourced from their own content). What sessions
+   never do is claim to *be* the mentor or invent their biography.
+2. **Provenance lives in the brain, not the conversation.** Every claim traces to a
+   source — that audit trail lives in the brain and the session logs. Sessions don't
+   recite it; they speak with internalized authority. (Inline citations would make
+   hard-won real-world advice read like a theory paper.)
+3. **One spoken honesty signal: sourced vs extrapolated.** When the mentor's material
+   covers your situation, you just get taught. When it doesn't — when the mentor extends
+   their thinking onto something the real person never addressed — the session says so,
+   naturally, so you always know what's sourced and what's inferred.
 4. **Agent-agnostic by design.** The mentor brain and session protocol are plain markdown.
    The `/mentor` skill is just a thin adapter for Claude Code — any agent harness that can
    read and write files can run a session.
@@ -83,8 +87,7 @@ its strictest evidence requirement and will warn you when it can't find any.
 |---|---|
 | `pipeline/` | The workflow itself — stage instructions and templates. The product. |
 | `mentors/<name>/` | One mentor: definition, scan, research handoffs + findings, and the curated `brain/`. **Gitignored.** |
-| `mentee/` | Who you are — shared across all mentorship tracks. **Gitignored.** |
-| `workspace/<track>/` | One active mentorship: charter, progress notes, session logs. **Gitignored.** |
+| `mentees/<name>/` | Who you are (`profile.md`), and per-mentor memory (`<mentor>/journey.md` + `sessions/`). **Gitignored.** |
 | `.claude/skills/` | `/mentor` (run a session) and `/mentor-build` (run the pipeline). |
 | `DESIGN.md` | Design decisions log and open questions. |
 

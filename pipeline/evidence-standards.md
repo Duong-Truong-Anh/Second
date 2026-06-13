@@ -4,6 +4,40 @@ Shared rules for what counts as a mentor's teaching and how claims are graded.
 All pipeline stages apply these. Research briefs must **inline** the relevant
 rules (briefs are self-contained and can't reference this file).
 
+## Provenance is an auditing property of the brain, not a speech act in the session
+
+The pipeline's job is to guarantee that every claim in a brain is real and traceable.
+That guarantee is enforced **in the artifact** — markers on claims, the `sources.md`
+ledger, the gaps list. It is *not* meant to be performed aloud in a session. A session
+that recites source IDs or prefixes every sentence with "the mentor teaches…" turns
+internalized knowledge back into a database read-out, and (ironically) makes hard-won
+real-world advice feel like theory. So:
+
+- **Findings and the brain:** show all the provenance. Mark everything. This is where
+  auditability lives.
+- **Sessions:** speak with internalized authority. Provenance stays in the brain and the
+  session log (the audit trail), not in the conversation. The one honesty signal that
+  *does* surface is the **sourced-vs-extrapolated boundary** — and only when it changes
+  how much the mentee should trust the advice (i.e. when crossing into territory the
+  brain doesn't cover). See DESIGN.md D18.
+
+## Voice vs impersonation
+
+A mentor brain captures two separable things, and they have very different evidence
+profiles:
+- **Voice** — *how the mentor talks and explains*: register, cadence, metaphors,
+  phrasings, explanatory structure. This is **well-sourced** from monologue content
+  (videos, posts, talks) and belongs in `voice.md`. Sessions adopt it.
+- **Teaching behavior** — *how the mentor mentors a person 1-on-1*. This is **often
+  unsourced** (the T1 problem below) and belongs in `teaching-style.md`.
+
+Sessions may speak **in the mentor's voice** — that is adopting how they express ideas,
+which is sourced. Sessions may **not impersonate**: never claim to *be* the mentor,
+never invent their biography or put words/positions in their mouth they didn't hold. If
+the mentee asks something the real person never addressed, the voice stays but the
+certainty drops to honest extrapolation. (Knowledge **and voice**, not impersonation —
+this refines the older "knowledge, not persona" rule; see DESIGN.md D18.)
+
 ## The evidence ladder — taught vs implied
 
 What counts as "the mentor teaches this"? Four rungs; the first three are admissible:
